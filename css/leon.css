@@ -153,7 +153,7 @@ body {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
-  width: 350px;
+  width: 320px;
   max-width: 100%;
 }
 
@@ -171,3 +171,38 @@ body {
 }
 
 /* End Landing Section  */
+
+/* Start Feature Section  */
+.features {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f6f6f6;
+}
+
+.features .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.features .feat {
+  padding: 20px;
+  text-align: center;
+}
+
+.features .feat i {
+  color: var(--main-color);
+}
+
+.features .feat h3 {
+  text-transform: capitalize;
+  font-weight: 800;
+  margin: 25px 0;
+}
+
+.features .feat p {
+  color: #777;
+  line-height: 1.8;
+  font-size: 17px;
+}
+/* End Feature Section  */
