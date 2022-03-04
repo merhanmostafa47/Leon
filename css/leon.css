@@ -6,8 +6,14 @@
   --section-background: #f6f6f6;
   --paragragh-color: #777;
   --paragragh-line-height: 1.8;
+  --main-duration: 0.3s;
 }
-/* Start Varibles */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+/* End Varibles */
 
 /* Start Global Rules */
 * {
@@ -16,6 +22,10 @@
 
 body {
   font-family: "Work Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -42,7 +52,6 @@ body {
     width: 1170px;
   }
 }
-/* End Global Rules */
 /* End Global Rules */
 
 /* Start Components */
@@ -110,11 +119,11 @@ body {
 
 .header .links .icon span:nth-child(2) {
   width: 60%;
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
+  transition: var(--main-duration);
+  -webkit-transition: var(--main-duration);
+  -moz-transition: var(--main-duration);
+  -ms-transition: var(--main-duration);
+  -o-transition: var(--main-duration);
 }
 
 .header .links .icon span:last-child {
@@ -152,11 +161,11 @@ body {
   display: block;
   padding: 15px;
   color: #333;
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
+  transition: var(--main-duration);
+  -webkit-transition: var(--main-duration);
+  -moz-transition: var(--main-duration);
+  -ms-transition: var(--main-duration);
+  -o-transition: var(--main-duration);
 }
 
 .header .links ul li a:hover {
@@ -202,7 +211,6 @@ body {
   font-size: 19px;
   line-height: 1.8;
 }
-
 /* End Landing Section  */
 
 /* Start Feature Section  */
@@ -213,8 +221,6 @@ body {
 }
 
 .features .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
 }
 
@@ -247,8 +253,6 @@ body {
 }
 
 .services .services-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;
   margin-top: 100px;
 }
@@ -318,8 +322,6 @@ body {
 }
 
 .portfolio .portfolio-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;
   margin-top: 80px;
 }
